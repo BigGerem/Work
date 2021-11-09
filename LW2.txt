@@ -1,0 +1,15 @@
+#include <iostream>
+#include "windows.h"
+using namespace std;
+int main()
+{
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	int a=40, b=4, c=15;
+	double d;
+	printf("Відстань до дачі (a): %i км\n", a);
+	printf("Кількість бензину, необхідного на 100 км (b): %i л\n", b);
+	printf("Ціна одного літра бензину (c): %i грн\n", c);
+	d = (2 * b * a * c) / 100.;
+	printf("Вартість поїздки(d):\nd=2*b*a*c/100=%lf грн", d);
+}
